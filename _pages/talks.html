@@ -1,46 +1,48 @@
 ---
 layout: archive
-title: " "
+title: "Research interests"
 permalink: /talks/
 author_profile: true
 ---
 
-I'm currently working on compactifications of manifolds and the recognition of topological manifolds.
-<p> </p>
+{% capture research_content %}
+I work in geometric topology, studying how spaces behave at infinity, when geometric conditions force a space to be a manifold, and how algebra captures the complexity of knots. My current research centers on three interconnected themes: $$Z$$-compactifications of manifolds, Busemann geometry and manifold recognition, and the meridional rank conjecture.
 
-<h1>Compactifications of manifolds</h1>
+## Compactifications of manifolds: understanding infinity
 
-<p>In manifold topology, we often like embedding topological spaces into Euclidean space, in particular, as a compact subset because of the
-special and nice properties compact spaces have. The idea of compactification itself, which involves adding "points at infinity" 
-to a given space in order to create a new, larger space with desirable properties, was first introduced by French mathematician Émile Borel 
-in the early 1920s. Borel's work on compactification was further developed by other mathematicians in the decades that followed, 
-including Alexandroff, Stone, and Čech, and the theory of compactifications became an important tool in many areas of mathematics, 
-including analysis, algebraic geometry, and topology. Although there are various ways to compactify a given space, a 
-compactification that preserves certain properties of the original space often piques interest. One desirable way to compactify a manifold is 
-called <i>completion</i>, in which the final product is a compact manifold with boundary and the "compactification points" all lie in that boundary. 
-For instance, $R^n$ can be compactified by addition of an $(n - 1)$-sphere. Manifolds are not always completable even contractible
-open manifolds. For example, the Whitehead manifold is not completable. In higher dimensions, the Davis contractible open manifolds 
-are also not completable. Here the "fundamental group at infinity" plays a key role. Stallings gave a characterization of $R^n$ using that idea. Then Siebenmann, in
-his 1965 PhD thesis, characterized manifolds with compact boundary which are completable. As part of my dissertation,
-Craig Guilbault and I proved a characterization of completable $M^m (m \geq 6)$ which removes the requirement
-that $\partial M^m$ be compact. This resolved a problem that had persisted since the 60s, when geometric topology began to shift from a descriptive to a constructive approach.
-Nonetheless, our classification, while helpful, still have limitations. Some interesting manifolds, such as the Davis contractible open manifolds, are
-not completable...
+How can we give a boundary to a space that extends indefinitely? A *compactification* does this by adding “points at infinity.” For example, the plane can be identified with the interior of a disk; adding the surrounding circle produces a compact space. For a manifold, a space that locally resembles Euclidean space, one particularly natural goal is to add points at infinity so that the resulting space is a compact manifold with boundary. This is called a *manifold completion*. In joint work with Craig Guilbault, I characterized when such completions exist in dimensions at least six, extending the classical theory to manifolds whose existing boundary need not be compact. ([arXiv][1])
 
- </p> 
+Many interesting manifolds cannot be completed in this way. Their topology at infinity prevents the addition of an ordinary manifold boundary. This motivates a more flexible notion: a *$$Z$$-compactification*. Its added boundary may be irregular, but it remains topologically negligible in a precise sense: the entire compactified space can be continuously pushed slightly away from the added boundary and into the original manifold. This allows us to study infinity without requiring it to resemble the edge of a familiar surface or solid. ([arXiv][2])
 
+My research asks which manifolds admit such compactifications and what their boundaries reveal about their topology at infinity. I study both criteria for constructing these boundaries and examples showing their flexibility. Recent work includes four-dimensional manifolds that admit $$Z$$-compactifications even though they cannot be completed by an ordinary manifold boundary and fail stronger regularity conditions at infinity. ([arXiv][3]) I am also interested in connections with topological rigidity, particularly when algebraic information determines the topology of a manifold. ([arXiv][2])
 
-<h1>The recognition of manifolds</h1>
+## Busemann spaces and the recognition of manifolds
 
-<p> TBA                  </p>
+Can the behavior of shortest paths determine the shape of a space? I study this question in *Busemann spaces of nonpositive curvature*, where convexity of distances along shortest paths replaces the usual calculus-based description of curvature. This makes it possible to investigate geometry without assuming a smooth structure. ([arXiv][4])
 
+In joint work with Tadashi Fujioka, we resolved the last remaining case of Gromov’s 1981 question about whether a manifold with global Busemann nonpositive curvature can have a topology different from Euclidean space. We proved that every such four-dimensional topological manifold is homeomorphic to $$\mathbb{R}^{4}$$. Although its distances may differ greatly from Euclidean distances, its underlying topological shape cannot. ([arXiv][4])
 
-{% if site.talkmap_link == true %}
+The Euclidean conclusion was already known in dimensions at most three, while counterexamples exist in every dimension at least five. Our theorem completes the dimensional picture, extending the four-dimensional result of Lytchak, Nagano, and Stadler from CAT(0) spaces to the broader Busemann setting. It also extends the topological conclusion of the classical Cartan-Hadamard theorem beyond smooth geometry. ([arXiv][4])
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+A related direction concerns *Busemann $$G$$-spaces*, which are defined through basic properties of shortest paths and their local extension, without assuming that the spaces are manifolds. The Busemann conjecture asks whether every finite-dimensional $$G$$-space must nevertheless be a topological manifold. Whereas Gromov’s question concerns the global shape of a space already known to be a manifold, this conjecture asks whether the manifold structure itself follows from geometry. Together with Fujioka, I have proved the conjecture for $$G$$-spaces whose sufficiently small metric balls are convex: shortest paths between points of such a ball remain inside it. This shows that a simple geometric condition can force a space to look locally like Euclidean space. ([arXiv][5])
 
-{% endif %}
+My broader research explores how far these connections between distance, convexity, and topology extend, and when they also yield differentiable structures.
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+## The meridional rank conjecture: from open manifolds to knots
+
+In a joint project with Honghao Gao, Zhenkun Li, and Jian Wang, I study how algebra detects the geometric complexity of knots. The motivation comes from a connection with my research on the topology of open manifolds.
+
+In *Nonembeddable contractible open manifolds arising from Whitehead doubling*, Jian Wang, Yanqing Zou, and I study spaces that can be continuously contracted to a point, yet cannot be embedded in any compact manifold of the same dimension. Despite their apparent simplicity, their topology at infinity obstructs such embeddings. Our constructions involve *Whitehead doubling*, an operation that builds a new knot from an existing one. A key ingredient is that repeated Whitehead doubling forces the number of generators of the associated knot groups to grow without bound. Thus, the increasing algebraic complexity of knots becomes a tool for understanding why certain manifolds cannot fit inside compact spaces. ([arXiv][6])
+
+This connection led to a more refined question about measuring knot complexity. A *knot group* records how loops move through the space surrounding a knot. Its ordinary rank counts the smallest number of generators needed to describe this algebraic structure. The *meridional rank* imposes an additional geometric requirement: the generators must be represented by small loops going once around individual strands, called *meridians*. Meanwhile, the *bridge number* measures complexity directly from the knot’s shape: it is the smallest number of peaks achievable by rearranging the knot without cutting it or passing strands through one another. The meridional rank conjecture predicts that meridional rank and bridge number always agree, linking the algebra of the surrounding space to the geometry of the knot itself.
+
+Our current work investigates this relationship for satellite knots, particularly iterated Whitehead doubles, by combining matrix representations of knot groups with the topology of how knot complements decompose into simpler pieces. We also study the rank-three case: must a knot whose meridional rank is three admit a three-bridge presentation? These projects connect two themes of my research: understanding the complexity of knots and detecting the topology hidden at infinity in open manifolds.  
+
+[1]: https://arxiv.org/abs/1712.05995 "[1712.05995] Compactifications of manifolds with boundary"
+[2]: https://arxiv.org/html/2312.02527v3 "On 𝒵-compactifiability of manifolds"
+[3]: https://arxiv.org/abs/2608.24416 "[2608.24416] Kwasik--Schultz manifolds are $\mathcal{Z}$-compactifiable"
+[4]: https://arxiv.org/html/2504.14455v3 "Topological regularity of Busemann spaces of nonpositive curvature"
+[5]: https://arxiv.org/abs/2608.20800 "[2608.20800] Busemann G-spaces with convex balls"
+[6]: https://arxiv.org/html/2510.06598v2 "Nonembeddable contractible open manifolds arising from Whitehead doubling"
+{% endcapture %}
+{{ research_content | markdownify }}
