@@ -7,6 +7,7 @@ author_profile: true
 
 ## Preprints
 
+8. H. Gao, S. Gu, Z. Li, J. Wang, <i>Meridional ranks of iterated Whitehead doubles</i>, <a href="https://arxiv.org/abs/2611.15673">arXiv:2611.15673</a> (2026), 44 pages.<br>
 7. T. Fujioka, S. Gu, <i>The disjoint disks property for Busemann G-spaces</i>, <a href="https://arxiv.org/abs/2609.21357">arXiv:2609.21357</a> (2026), 17 pages.<br>
 6. S. Gu, <i>Kwasik–Schultz manifolds are 𝒵-compactifiable</i>, <a href="https://arxiv.org/abs/2608.24416">arXiv:2608.24416</a> (2026), 22 pages.<br>
 5. T. Fujioka, S. Gu, <i>Busemann G-spaces with convex balls</i>, <a href="https://arxiv.org/abs/2608.20800">arXiv:2608.20800</a> (2026), 12 pages.<br>
